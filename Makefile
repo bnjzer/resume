@@ -1,4 +1,4 @@
-# sur Debian : texlive-latex-extra texlive-fonts-extra texlive-luatex texlive-xetex
+# sur Debian : apt-get install texlive-latex-extra texlive-fonts-extra texlive-luatex texlive-xetex
 
 all: resume.pdf
 
