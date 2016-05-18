@@ -1,3 +1,5 @@
+# sur Debian : texlive-latex-extra texlive-fonts-extra texlive-luatex texlive-xetex
+
 all: resume.pdf
 
 %.pdf: %.tex
