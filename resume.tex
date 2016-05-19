@@ -15,7 +15,7 @@
 
 % adjust the page margins
 %\usepackage[scale=0.75]{geometry}
-\usepackage[vmargin=1.5cm,hmargin=1.5cm]{geometry}
+\usepackage[vmargin=1.3cm,hmargin=1.5cm]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -27,12 +27,12 @@
 %\phone[fixed]{+2~(345)~678~901}
 \email{benjamin.benoist@insa-rouen.fr}                               % optional, remove / comment the line if not wanted
 %\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
-\social[linkedin]{benjaminbenoist}                        % optional, remove / comment the line if not wanted
+%\social[linkedin]{benjaminbenoist}                        % optional, remove / comment the line if not wanted
 %\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
 \social[github]{bnjzer}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+% \quote{"There are only 10 types of people in the world: those who understand binary, and those who don't."}                                 % optional, remove / comment the line if not wanted
 
 %----------------------------------------------------------------------------------
 %            content
@@ -52,48 +52,54 @@
 \makecvtitle
 
 \section{Profile}
+\vspace{1em}
 
   I'm passionate about IT. I like aiming at inherent problems with distributed systems (fault-tolerance, latency, high availability, etc.) and I'm more and more interested in Linux kernel (currently working in my free time to contribute). I wish I could find a job related to these topics.
 
 \section{Experience}
+\vspace{1em}
 
   \cventry{September 2012 - Now}{Data Engineer}{French Ministry of Defence}{PARIS}{}{
 \begin{itemize}%
-\item Lead developer in a team of 4 engineers to create a data pipeline with Zookeeper, Kafka, Storm and Java
+  \item Built a new stream processing platform with \textit{Zookeeper}, \textit{Kafka}, \textit{Storm} and \textit{Java} (lead developer in a team of 4 engineers)
   \begin{itemize}%
-    \item Used gitlab to develop, with issues and merge requests;
-    \item Packaged for Debian with bash scripts;
-    \item Set up a testing environment with Docker;
-    \item Deployed the clusters with Puppet;
-    \item Used Nagios to supervise the clusters;
-    \item Provided metrics using ELK (Logstash, Elasticsearch and Kibana);
-    \item Developed a tool to manage the clusters in Python;
-    \item Time management skills gained from adjusting the planning.
+    \item Used Gitlab to develop, with issues and merge requests;
+    \item Packaged for \textit{Debian} with bash scripts;
+    \item Set up a testing environment with \textit{Docker};
+    \item Deployed the clusters with \textit{Puppet};
+    \item Used \textit{Nagios} to supervise the clusters;
+    \item Provided metrics using ELK (\textit{Logstash}, \textit{Elasticsearch} and \textit{Kibana});
+    \item Developed a tool to manage the clusters in \textit{Python};
+    \item Gained time management skills from creating and then adjusting the planning.
   \end{itemize}
-\item Now working on another data pipeline with Zookeeper, Kafka, Spark and Scala
+\item Now building another stream processing platform with \textit{Zookeeper}, \textit{Kafka}, \textit{Spark} and \textit{Scala}
 \end{itemize}}
   
-\cventry{February - August 2012}{6-month final internship}{French Ministry of Defence}{PARIS}{}{Development of modules in C language to automate network protocols analysis}
+\cventry{February - August 2012}{6-month final internship}{French Ministry of Defence}{PARIS}{}{Development of modules in \textit{C} to automate network protocols analysis}
 
-\cventry{2010 -- 2011}{Projects supervisor}{Junior Enterprise of INSA}{Rouen}{}{In charge of training the project leaders, validating the contracts and managing amendment}
+\cventry{2010 -- 2011}{Projects supervisor}{Junior Enterprise of INSA}{Rouen}{}{In charge of training the project managers, validating the contracts and managing contract amendments}
+
+\cventry{2009 (6 months)}{Project manager}{Junior Enterprise of INSA}{Rouen}{}{Established planning, costs and managed a team of 3 people to create a website for an enterprise}
 
 \section{Education}
+\vspace{1em}
 
-\cventry{August 2011 -- January 2012}{Master}{Royal Institute of Technology (KTH)}{Stockholm}{ERASMUS semester\textit{Grade}}{Mainly courses about networking (TCP/IP stack and routing protocols (RIP, OSPF, BGP)}  % arguments 3 to 6 can be left empty
-\cventry{2007 -- 2012}{Engineer}{National Institute Applied Sciences (INSA)}{Rouen (France)}{\textit{Grade}}{Description}
-
+\cventry{August 2011 -- January 2012}{ERASMUS semester}{Royal Institute of Technology (KTH)}{Stockholm}{}{Full TCP/IP stack and routing protocols (RIP, OSPF, BGP). Courses in English}  % arguments 3 to 6 can be left empty
+\cventry{2007 -- 2012}{Master’s Degree in Computer Science}{National Institute of Applied Sciences (INSA)}{Rouen (France)}{}{Linux operating systems, networking, advanced programming and project management}
 
 \section{Languages}
-\cvitemwithcomment{French}{fluent}{mother tongue}
-\cvitemwithcomment{English}{very good}{890 at TOEIC before spending one semester abroad}
-\cvitemwithcomment{German}{scolar}{I can almost explain what I want}
+\vspace{1em}
+
+\cvitemwithcomment{French}{mother tongue}{}
+\cvitemwithcomment{English}{full professional proficiency}{890 at TOEIC before spending one semester abroad}
+\cvitemwithcomment{German}{limited working proficiency}{}
 
 \section{Interests}
+\vspace{1em}
 
-  \cvitem{Sport}{currently training for a Half IronMan}
-  \cvitem{Travelling}{at least 3 travels abroad per year for the last 4 years}
-  \cvitem{Nature}{love hanging around in wild places}
-
+\cvitem{Sport}{training for a Half IronMan}
+\cvitem{Travelling}{at least 3 trips abroad per year for the last 4 years}
+\cvitem{Nature}{love hiking and hanging around in wild places}
 
 \clearpage
 %-----       letter       ---------------------------------------------------------
