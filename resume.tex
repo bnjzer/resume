@@ -19,9 +19,15 @@
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvheadnamewidth}{16cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
+%
+%\newcommand{\myTitleName}{Software Engineer}
+\newcommand{\myTitleName}{Data Engineer}
+%\renewcommand*{\namefont}{\fontsize{29}{31}\mdseries\upshape}
+%\renewcommand*{\titlefont}{\fontsize{22}{24}\mdseries\upshape}
+
 % personal data
 \name{Benjamin}{BENOIST}
-\title{Data Engineer}                               % optional, remove / comment the line if not wanted
+\title{\myTitleName}
 %\address{}{}{Paris, FRANCE}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+33~7~77~36~73~47}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\phone[fixed]{+2~(345)~678~901}
@@ -34,8 +40,6 @@
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 % \quote{"There are only 10 types of people in the world: those who understand binary, and those who don't."}                                 % optional, remove / comment the line if not wanted
 
-%\renewcommand*{\namefont}{\fontsize{30}{32}\mdseries\upshape}
-%\renewcommand*{\titlefont}{\fontsize{21}{23}\mdseries\upshape}
 
 %----------------------------------------------------------------------------------
 %            content
@@ -57,7 +61,7 @@
 \section{Professional experience}
 \vspace{0.7em}
 
-\cventry{September 2012 - Now}{Data Engineer}{French Ministry of Defense}{PARIS}{}{
+\cventry{September 2012 - Now}{\myTitleName}{French Ministry of Defense}{PARIS}{}{
 \begin{itemize}%
   \item Built a stream processing platform in \textit{Java} with \textit{Storm}, \textit{Kafka} and \textit{Zookeeper} (lead developer in a team of 4 engineers)
   \begin{itemize}%
@@ -90,8 +94,8 @@
 \vspace{0.7em}
 
 \begin{itemize}
-  \item Started to contribute to the Linux Kernel
-  \item Currently implementing data structures and algorithms in Scala \href{https://github.com/bnjzer/dataStructsAlgos}{\faGithub}
+  \item Developed a program in \textit{C} that lists duplicated files in a directory (or 2) recursively based on their md5sum \href{https://github.com/bnjzer/findDuplicatesByHash}{\faGithub}
+  \item Currently implementing data structures and algorithms in \textit{Scala} \href{https://github.com/bnjzer/dataStructsAlgos}{\faGithub}
   \item Completed Kernighan and Ritchie's book's exercices \href{https://github.com/bnjzer/c}{\faGithub}
   \item Have been going to \href{https://fosdem.org}{\faExternalLink{} FOSDEM} (software developers' meeting) every year for the last 4 years
 \end{itemize}
