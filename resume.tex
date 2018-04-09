@@ -31,11 +31,12 @@
 %\address{}{}{Paris, FRANCE}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+33~7~77~36~73~47}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\phone[fixed]{+2~(345)~678~901}
-\email{benjamin.benoist@insa-rouen.fr}                               % optional, remove / comment the line if not wanted
+\email{benjaminbenoist1@gmail.com}                               % optional, remove / comment the line if not wanted
 %\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
 \social[linkedin]{benjaminbenoist}                        % optional, remove / comment the line if not wanted
 %\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
 \social[github]{bnjzer}                              % optional, remove / comment the line if not wanted
+\extrainfo{\httplink[\faStackOverflow{} bnjzer]{www.stackoverflow/bnjzer}}
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 % \quote{"There are only 10 types of people in the world: those who understand binary, and those who don't."}                                 % optional, remove / comment the line if not wanted
@@ -61,11 +62,28 @@
 \section{Professional experience}
 \vspace{0.7em}
 
-\cventry{September 2012 - Now}{\myTitleName}{French Ministry of Defense}{PARIS}{}{
-\begin{itemize}%
-  \item Built a stream processing platform in \textit{Java} with \textit{Storm}, \textit{Kafka} and \textit{Zookeeper} (lead developer in a team of 4 engineers)
+\cventry{April 2017 - Now}{\myTitleName}{\href{https://travelaudience.com/}{travel audience} (ad tech company)}{BERLIN}{}{
+\begin{itemize}
+  \item Building batch/streaming pipelines in \textit{Scala} running in \textit{Google Cloud Platform}, with \textit{Dataflow} (\textit{Beam}) or \textit{Spark} (\textit{Dataproc})
   \begin{itemize}%
-    \item Used Gitlab to develop, with issues and merge requests;
+    \item Possible inputs/outputs: \textit{Google Cloud Storage}, \textit{PubSub}, \textit{Kafka}, \textit{BigTable},  \textit{BigQuery};
+		\item Max throughput for streaming: 60k events/s;
+		\item Some pipelines store state in \textit{Aerospike};
+		\item Ongoing discussions with internal clients to create the specifications that help the business at best
+  \end{itemize}
+  \item Providing data scientists with APIs to retrieve stored data
+  \item Wrote a \underline{\href{https://tech.travelaudience.com/bigtable-storing-protobuf-bytes-in-one-column-vs-splitting-the-content-into-column-families-c231bdff8db7}{blog post}} regarding \textit{BigTable}'s performances
+\end{itemize}
+}
+  
+\vspace{0.6em}
+
+\cventry{September 2012 - March 2017}{\myTitleName}{French Ministry of Defense}{PARIS}{}{
+\begin{itemize}%
+  \item Built streaming pipelines in \textit{Java} with \textit{Storm}, \textit{Kafka} and \textit{Zookeeper}
+  \item Built streaming pipelines in \textit{Scala} with \textit{Spark}, \textit{Kafka} and  \textit{Zookeeper}
+  \begin{itemize}%
+    \item Used Github workflow;
     \item Packaged for \textit{Debian} with \textit{bash} scripts;
     \item Set up a testing environment with \textit{Docker};
     \item Deployed the clusters with \textit{Puppet};
@@ -74,32 +92,32 @@
     \item Developed a tool to manage the clusters in \textit{Python};
     \item Gained time management skills from creating and then adjusting the planning.
   \end{itemize}
-\item Now building another stream processing platform in \textit{Scala} (\textit{Akka Streams}) with \textit{Spark}, \textit{Kafka} and  \textit{Zookeeper}
-\end{itemize}}
+\end{itemize}
+}
   
-\vspace{0.2em}
+\vspace{0.6em}
 
 \cventry{February - August 2012}{6 months engineering internship}{French Ministry of Defense}{PARIS}{}{Developped modules in \textit{C} to automate network protocols analysis}
 
 \vspace{0.2em}
 
 %\cventry{2010 -- 2011}{Projects supervisor}{INSA's Junior Enterprise}{Rouen}{}{Supervised the project managers, valided the contracts and managed contract amendments}
-\cventry{2010 -- 2011}{Projects supervisor}{INSA's Junior Enterprise}{Rouen}{}{Developed processes so that the association can be become a certified Junior Enterprise}
+%\cventry{2010 -- 2011}{Projects supervisor}{INSA's Junior Enterprise}{Rouen}{}{Developed processes so that the association can be become a certified Junior Enterprise}
 
 \vspace{0.2em}
 
 %\cventry{2009 (6 months)}{Project manager}{INSA's Junior Enterprise}{Rouen}{}{Established planning, costs and managed a team of 3 people to create a website for a company}
 
-\section{Personal experience}
-\vspace{0.7em}
-
-\begin{itemize}
-  \item Complete a triangle challenge in \textit{Scala} \href{https://github.com/bnjzer/triangleChallenge}{\faGithub}
-  \item Developed a program in \textit{C} that lists duplicated files in a directory (or 2) recursively based on their md5sum \href{https://github.com/bnjzer/findDuplicatesByHash}{\faGithub}
-  \item Currently implementing data structures and algorithms in \textit{Scala} \href{https://github.com/bnjzer/dataStructsAlgos}{\faGithub}
-  \item Completed Kernighan and Ritchie's book's exercices \href{https://github.com/bnjzer/c}{\faGithub}
-  \item Have been going to \href{https://fosdem.org}{\faExternalLink{} FOSDEM} (software developers' meeting) every year for the last 4 years
-\end{itemize}
+%\section{Personal experience}
+%\vspace{0.7em}
+%
+%\begin{itemize}
+%  \item Complete a triangle challenge in \textit{Scala} \href{https://github.com/bnjzer/triangleChallenge}{\faGithub}
+%  \item Developed a program in \textit{C} that lists duplicated files in a directory (or 2) recursively based on their md5sum \href{https://github.com/bnjzer/findDuplicatesByHash}{\faGithub}
+%  \item Currently implementing data structures and algorithms in \textit{Scala} \href{https://github.com/bnjzer/dataStructsAlgos}{\faGithub}
+%  \item Completed Kernighan and Ritchie's book's exercices \href{https://github.com/bnjzer/c}{\faGithub}
+%  \item Have been going to \href{https://fosdem.org}{\faExternalLink{} FOSDEM} (software developers' meeting) every year for the last 4 years
+%\end{itemize}
 
 \section{Education}
 \vspace{0.7em}
@@ -120,9 +138,9 @@
 \section{Interests}
 \vspace{0.7em}
 
-\cvitem{Sport}{Training for an IronMan}
-\cvitem{Travelling}{At least 3 trips abroad per year for the last 4 years}
+\cvitem{Sport}{Currently training for the IronMan of Nice in June}
 \cvitem{Nature}{Love hiking and hanging around in wild places}
+\cvitem{Travelling}{At least 3 trips abroad per year}
 
 \clearpage
 
